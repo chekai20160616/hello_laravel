@@ -5,12 +5,12 @@
   <title>注册确认链接</title>
 </head>
 <body>
-  <h1>感谢您在 Sample 网站进行注册！</h1>
+  <h1>感谢您在 陇州通进行注册！</h1>
 
   <p>
     请点击下面的链接完成注册：
-    <a href="{{ route('confirm_email', 'sss') }}">
-      {{ route('confirm_email', 'sss') }}
+    <a href="{{ route('confirm_email', $user->activation_token) }}">
+      {{ route('confirm_email', $user->activation_token) }}
     </a>
   </p>
 
